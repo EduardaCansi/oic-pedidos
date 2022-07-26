@@ -1,13 +1,13 @@
 import { Router } from "express"
 import multer from "multer"
-import PedidosController from "../controllers/PedidosController.cjs"
+import OrdersController from "../controllers/OrdersController.cjs"
 
 const upload = multer({ dest: "uploads/" })
 
 const router = Router()
 router.post(
     "/pedido/importacao",
-    upload.single("payload"), PedidosController.orderImport
+    upload.single("payload"), OrdersController.orderImport
 )
 
 export default router

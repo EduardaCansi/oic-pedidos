@@ -2,19 +2,13 @@
   "name": "oic-pedidos",
   "version": "1.0.0",
   "description": "",
-  "engines": {
-    "node": "16.x"
-  },
-  "main": "server.js",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon server.js"
   },
-  "keywords": [
-    "node",
-    "heroku",
-    "express"
-  ],
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {

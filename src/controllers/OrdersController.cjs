@@ -1,7 +1,7 @@
 const fs = require("fs")
 const path = require("path")
 
-class PedidosController {
+class OrdersController {
     static orderImport(req, res) {
         try {
             const filePath = path.join(__dirname, "..", "..", "uploads", req.file.filename)
@@ -62,4 +62,4 @@ class PedidosController {
     }
 }
 
-module.exports = PedidosController
+module.exports = OrdersController

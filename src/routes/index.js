@@ -1,7 +1,7 @@
-import pedidosRout from "./pedidosRout.js"
+import orderRoutes from "./ordersRoutes.js"
 
 const useRoutes = app => {
-    app.use(pedidosRout)
+    app.use(orderRoutes)
 }
 
 export default useRoutes
